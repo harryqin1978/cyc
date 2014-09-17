@@ -105,9 +105,9 @@
           <?php if ($pinterest_url): ?><li class="pinterest">
             <a target="_blank" title="<?php print $site_name; ?> in Pinterest" href="<?php print $pinterest_url; ?>"><?php print $site_name; ?> Twitter </a>
           </li><?php endif; ?>
-          <li class="rss">
+          <!-- <li class="rss">
             <a target="_blank" title="<?php print $site_name; ?> in RSS" href="<?php print $front_page; ?>rss.xml"><?php print $site_name; ?> RSS </a>
-          </li>
+          </li> -->
         </ul>
       </div>
     <?php endif; ?>
