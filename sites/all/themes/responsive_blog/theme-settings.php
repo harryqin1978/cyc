@@ -143,6 +143,12 @@ function responsive_blog_form_system_theme_settings_alter(&$form, &$form_state) 
     '#default_value' => theme_get_setting('socialicon_display','responsive_blog'),
     '#description'   => t("Check this option to show Social Icon. Uncheck to hide."),
   );
+  $form['responsive_blog_settings']['socialicon']['linkedin_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Linkedin Profile URL'),
+    '#default_value' => theme_get_setting('linkedin_url', 'responsive_blog'),
+    '#description'   => t("Enter your Linkedin Profile URL. Leave blank to hide."),
+  );
   $form['responsive_blog_settings']['socialicon']['twitter_url'] = array(
     '#type' => 'textfield',
     '#title' => t('Twitter Profile URL'),

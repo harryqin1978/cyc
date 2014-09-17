@@ -82,6 +82,7 @@
     <?php endif; ?>
     <?php if (theme_get_setting('socialicon_display', 'responsive_blog')): ?>
         <?php 
+        $linkedin_url = check_plain(theme_get_setting('linkedin_url', 'responsive_blog')); 
         $twitter_url = check_plain(theme_get_setting('twitter_url', 'responsive_blog')); 
         $facebook_url = check_plain(theme_get_setting('facebook_url', 'responsive_blog')); 
         $google_plus_url = check_plain(theme_get_setting('google_plus_url', 'responsive_blog')); 
@@ -89,6 +90,9 @@
         ?>
       <div class="social-profile">
         <ul>
+          <?php if ($linkedin_url): ?><li class="linkedin">
+            <a target="_blank" title="<?php print $site_name; ?> in Facebook" href="<?php print $linkedin_url; ?>"><?php print $site_name; ?> Linkedin </a>
+          </li><?php endif; ?>
           <?php if ($facebook_url): ?><li class="facebook">
             <a target="_blank" title="<?php print $site_name; ?> in Facebook" href="<?php print $facebook_url; ?>"><?php print $site_name; ?> Facebook </a>
           </li><?php endif; ?>
